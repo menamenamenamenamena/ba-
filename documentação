@@ -1,0 +1,26 @@
+C:\Users\rafael.7914\Documents\O_seu_nome\JavaSE8forProgrammers-master\examples\ch12\fig12_02\Addition.java
+
+// Programa Addition que usa JOptionPane para input e output.
+import javax.swing.JOptionPane; 
+
+public class Addition 
+{
+   public static void main(String[] args)
+   {
+      // obtem input do usuario de JOptionPane input dialogs
+      String firstNumber = 
+         JOptionPane.showInputDialog("Enter first integer");
+      String secondNumber =
+         JOptionPane.showInputDialog("Enter second integer");
+
+      // converte String inputs para valores int para usar em um calculo
+      int number1 = Integer.parseInt(firstNumber); 
+      int number2 = Integer.parseInt(secondNumber);
+
+      int sum = number1 + number2; // adicina numeros
+
+      // apresenta resultados em um JOptionPane message dialog
+      JOptionPane.showMessageDialog(null, "The sum is " + sum, 
+         "Sum of Two Integers", JOptionPane.PLAIN_MESSAGE);
+   } 
+} // termina a classe Addition
